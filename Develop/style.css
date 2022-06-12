@@ -69,3 +69,15 @@ textarea{
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
+
+.hour {
+  background-color: red;
+}
+
+.message {
+  background-color: blue;
+}
+
+.save {
+  background-color: green;
+}
