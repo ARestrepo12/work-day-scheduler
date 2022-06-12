@@ -71,13 +71,27 @@ textarea{
 }
 
 .hour {
-  background-color: red;
+  background-color: lightsteelblue;
 }
 
 .message {
-  background-color: blue;
+  background-color: lightgray;
 }
 
 .save {
-  background-color: green;
+  background-color: teal;
 }
+
+.save:hover {
+  border-color: black;
+  border-width: 10px;
+}
+
+textarea {
+  width: 33vw;
+}
+
+.material-symbols-outlined {
+  font-size: 50px;
+}
+
