@@ -1,5 +1,3 @@
-
-var tasks = {};
 const save1 =document.getElementById('save1')
 const save2 =document.getElementById('save2')
 const save3 =document.getElementById('save3')
@@ -21,7 +19,6 @@ const task8 = document.getElementById('4')
 const task9 = document.getElementById('5')
 
 
-
 // Date function
 const displayDate = document.getElementById('currentDay')
 
@@ -32,6 +29,7 @@ var yyyy = today.getFullYear();
 
 today = mm + '/' + dd + '/' + yyyy;
 displayDate.innerHTML = today
+
 
 //save to local storage
 save1.addEventListener('click', function() {
@@ -73,4 +71,46 @@ save9.addEventListener('click', function() {
 
 //appending local storage to page
 var localtask1 = localStorage.getItem('task1description');
-task1.append(localtask1);
+if (localtask1 !== null) {
+    task1.append(localtask1);
+}
+
+var localtask2 = localStorage.getItem('task2description');
+if (localtask2 !== null) {
+   task2.append(localtask2); 
+}
+
+var localtask3 = localStorage.getItem('task3description');
+if (localtask3 !== null) {
+    task3.append(localtask3);
+}
+
+var localtask4 = localStorage.getItem('task4description');
+if (localtask4 !== null) {
+    task4.append(localtask4);
+}
+
+var localtask5 = localStorage.getItem('task5description');
+if (localtask5 !== null) {
+    task5.append(localtask5);
+}
+
+var localtask6 = localStorage.getItem('task6description');
+if (localtask6 !== null) {
+  task6.append(localtask6);  
+}
+
+var localtask7 = localStorage.getItem('task7description');
+if (localtask7 !== null) {
+    task7.append(localtask7);
+}
+
+var localtask8 = localStorage.getItem('task8description');
+if (localtask8 !== null) {
+   task8.append(localtask8); 
+}
+
+var localtask9 = localStorage.getItem('task9description');
+if (localtask9 !== null) {
+    task9.append(localtask9);
+}
