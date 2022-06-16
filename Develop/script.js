@@ -21,7 +21,7 @@ var saveTask = function () {
 
 
 
-document.querySelectorAll('save').forEach(item => {
+document.querySelectorAll('.save').forEach(item => {
     item.addEventListener('click', test)
   })
 
