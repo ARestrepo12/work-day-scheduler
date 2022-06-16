@@ -1,4 +1,4 @@
-
+const message = document.getElementById('9');
 var tasks = {};
 
 
@@ -13,18 +13,18 @@ var yyyy = today.getFullYear();
 today = mm + '/' + dd + '/' + yyyy;
 displayDate.innerHTML = today
 
-var saveTask = function () {
-    localStorage.setItem("textarea", JSON.stringify);
-};
+// var loadTasks = function() {
+//     tasks = JSON.parse(localStorage.getItem("tasks"));
+// };
+
+window.localStorage.setItem("tasks","message.value")
 
 
-
-
-
+// save button 
 document.querySelectorAll('.save').forEach(item => {
     item.addEventListener('click', test)
   })
 
 function test () {
-    console.log("clicked")
+    console.log(message.value)
 }
