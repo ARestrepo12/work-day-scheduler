@@ -70,3 +70,7 @@ save9.addEventListener('click', function() {
     localStorage.setItem('task9description', `${task9.value}` )
   });
 
+
+//appending local storage to page
+var localtask1 = localStorage.getItem('task1description');
+task1.append(localtask1);
